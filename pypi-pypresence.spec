@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-pypresence
-Version  : 4.2.1
-Release  : 1
-URL      : https://files.pythonhosted.org/packages/58/df/be2dbd7ed2262791536278295d3c4e56d5c17d4291666f35fd6190a7f2ab/pypresence-4.2.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/58/df/be2dbd7ed2262791536278295d3c4e56d5c17d4291666f35fd6190a7f2ab/pypresence-4.2.1.tar.gz
+Version  : 4.3.0
+Release  : 2
+URL      : https://files.pythonhosted.org/packages/f4/2e/d110f862720b5e3ba1b0b719657385fc4151929befa2c6981f48360aa480/pypresence-4.3.0.tar.gz
+Source0  : https://files.pythonhosted.org/packages/f4/2e/d110f862720b5e3ba1b0b719657385fc4151929befa2c6981f48360aa480/pypresence-4.3.0.tar.gz
 Summary  : Discord RPC client written in Python
 Group    : Development/Tools
 License  : MIT
@@ -41,10 +41,10 @@ python3 components for the pypi-pypresence package.
 
 
 %prep
-%setup -q -n pypresence-4.2.1
-cd %{_builddir}/pypresence-4.2.1
+%setup -q -n pypresence-4.3.0
+cd %{_builddir}/pypresence-4.3.0
 pushd ..
-cp -a pypresence-4.2.1 buildavx2
+cp -a pypresence-4.3.0 buildavx2
 popd
 
 %build
@@ -52,7 +52,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1686611992
+export SOURCE_DATE_EPOCH=1689005169
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
